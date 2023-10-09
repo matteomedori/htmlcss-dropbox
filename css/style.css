@@ -27,6 +27,7 @@ button {
   all: unset;
   padding: 10px 15px;
   cursor: pointer;
+  text-align: center;
 }
 
 .container-big {
@@ -173,8 +174,8 @@ main .first-section .radio-btns {
   padding: 40px 30px;
 }
 
-.first-section-content .offer .offer-features h3 {
-  font-size: 18px;
+.first-section-content h3 {
+  font-size: 24px;
 }
 
 .first-section-content .offer .offer-features .price {
@@ -237,6 +238,24 @@ main .first-section .radio-btns {
   content: "\f0c0";
   margin: 0 5px 0 -15px;
 }
+
+.custom .offer.final {
+  display: flex;
+}
+
+.custom .offer.final div:first-child {
+  width: 70%;
+  margin-right: 50px;
+}
+
+.custom .offer.final h4 {
+  padding: 20px 0 45px 0;
+}
+
+/* .first-section-content .primary-btn {
+  display: block;
+  width: 100%;
+} */
 
 /*
 ----------

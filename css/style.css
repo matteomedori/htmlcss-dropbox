@@ -14,12 +14,57 @@ RESET
 COMMON
 ----------
 */
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+button {
+  all: unset;
+  padding: 5px 15px;
+  cursor: pointer;
+}
 
 /*
 ----------
 HEADER
 ----------
 */
+header {
+  color: black;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav .nav-left,
+header nav .nav-right {
+  display: flex;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+header nav ul li,
+#logo,
+header nav .nav-right .btn {
+  padding: 30px;
+}
+
+.primary-btn {
+  color: white;
+  background-color: #0061ff;
+}
 
 /*
 ----------

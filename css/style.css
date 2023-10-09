@@ -25,12 +25,17 @@ img {
 
 button {
   all: unset;
-  padding: 5px 15px;
+  padding: 10px 15px;
   cursor: pointer;
 }
 
-.container {
+.container-big {
   max-width: 1190px;
+  margin: 0 auto;
+}
+
+.container-small {
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -126,6 +131,112 @@ header nav .nav-right .btn {
 MAIN
 ----------
 */
+/*----------------first section--------------*/
+main .container-small.first-section {
+  margin-top: 100px;
+  font-size: 14px;
+}
+
+main .first-section h2 {
+  font-size: 35px;
+  padding: 60px 0;
+}
+
+main .first-section .radio-btns {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 45px;
+}
+
+.first-section-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.first-section-content > * {
+  width: calc((100% - 100px) / 3);
+  border: 1px solid #d0d0d3;
+}
+
+.first-section-content > div:last-of-type {
+  flex-grow: 1;
+}
+
+.first-section-content .subscription-target {
+  text-align: center;
+  border-bottom: 1px solid #d0d0d3;
+  padding: 10px 0;
+}
+
+.first-section-content .offer {
+  padding: 40px 30px;
+}
+
+.first-section-content .offer .offer-features h3 {
+  font-size: 18px;
+}
+
+.first-section-content .offer .offer-features .price {
+  display: block;
+  padding: 25px 0 15px 0;
+}
+
+.first-section-content .offer ul {
+  list-style-type: none;
+  margin-left: 20px;
+  padding: 50px 0 0 0;
+}
+
+.first-section-content .offer ul li {
+  margin-bottom: 20px;
+}
+
+.first-section-content .offer .offer-features .link {
+  padding: 30px 0;
+}
+
+.first-section-content .offer .main-points h4 {
+  padding-top: 50px;
+}
+
+.first-section-content .singolo .offer-features ul li:nth-child(1):before,
+.first-section-content .azienda .offer-features ul li:nth-child(1):before {
+  font-family: "FontAwesome";
+  content: "\f007";
+  margin: 0 5px 0 -15px;
+}
+
+.first-section-content .singolo .offer-features ul li:nth-child(2)::before,
+.first-section-content .team .offer-features ul li:nth-child(2)::before,
+.first-section-content .azienda .offer-features ul li:nth-child(2)::before {
+  font-family: "FontAwesome";
+  content: "\f07b";
+  margin: 0 5px 0 -15px;
+}
+
+.first-section-content .singolo .offer-features ul li:nth-child(3)::before,
+.first-section-content .team .offer-features ul li:nth-child(3)::before,
+.first-section-content .azienda .offer-features ul li:nth-child(3)::before {
+  font-family: "FontAwesome";
+  content: "\f1e0";
+  margin: 0 5px 0 -15px;
+}
+
+.first-section-content .singolo .main-points ul li::before,
+.first-section-content .team .main-points ul li::before,
+.first-section-content .azienda .main-points ul li::before {
+  font-family: "FontAwesome";
+  content: "\f00c";
+  margin: 0 5px 0 -15px;
+  color: #0061ff;
+}
+
+.first-section-content .team .offer-features ul li:nth-child(1):before {
+  font-family: "FontAwesome";
+  content: "\f0c0";
+  margin: 0 5px 0 -15px;
+}
 
 /*
 ----------

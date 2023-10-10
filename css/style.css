@@ -32,6 +32,12 @@ img {
   border: 1px solid black;
 }
 
+.primary-btn {
+  color: white;
+  background-color: #0061ff;
+  border: none;
+}
+
 .container-big {
   max-width: 1190px;
   margin: 0 auto;
@@ -89,9 +95,8 @@ header nav ul li {
   padding: 0 30px;
 }
 
-.primary-btn {
-  color: white;
-  background-color: #0061ff;
+header nav ul li .primary-btn {
+  line-height: normal;
 }
 
 /*----------------jumbotron--------------*/
@@ -310,6 +315,54 @@ main .fourth-section {
 main .fourth-section h2 {
   padding-right: 350px;
   margin-bottom: 60px;
+}
+
+/*----------------fifth section--------------*/
+.top-section {
+  height: 640px;
+  display: flex;
+}
+
+.top-section > div {
+  width: calc(100% / 3);
+}
+
+.left-images {
+  background-color: green;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left-images > * {
+  border: 2px solid black;
+  width: calc(100% / 2);
+  height: 50%;
+  padding: 50px;
+}
+.left-images > img:nth-child(3) {
+  border: 2px solid black;
+  width: calc(100% / 2);
+  height: 50%;
+  padding: 140px 50px;
+}
+.center-section {
+  background-color: red;
+}
+.right-images {
+  background-color: blue;
+  display: flex;
+  flex-wrap: wrap;
+}
+.right-images > * {
+  border: 2px solid black;
+  width: calc(100% / 2);
+  height: 50%;
+  padding: 50px;
+}
+
+.bottom-section {
+  height: 360px;
+  background-color: aqua;
 }
 
 /*

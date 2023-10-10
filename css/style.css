@@ -23,11 +23,13 @@ img {
   display: block;
 }
 
-button {
+.btn {
   all: unset;
   padding: 10px 15px;
   cursor: pointer;
   text-align: center;
+  background-color: white;
+  border: 1px solid black;
 }
 
 .container-big {
@@ -38,6 +40,10 @@ button {
 .container-small {
   max-width: 1000px;
   margin: 0 auto;
+}
+
+h3 {
+  font-size: 24px;
 }
 
 /*
@@ -53,13 +59,14 @@ header {
 header nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 999;
   background-color: white;
+  height: 80px;
+  line-height: 80px;
 }
 
 header nav .nav-left,
@@ -71,12 +78,11 @@ header nav .nav-right {
 header nav ul {
   display: flex;
   list-style-type: none;
+  align-items: center;
 }
 
-header nav ul li,
-#logo,
-header nav .nav-right .btn {
-  padding: 30px;
+header nav ul li {
+  padding: 0 30px;
 }
 
 .primary-btn {
@@ -87,23 +93,19 @@ header nav .nav-right .btn {
 /*----------------jumbotron--------------*/
 .jumbotron {
   background-color: #b4d0e7;
-  position: relative;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .jumbotron h1 {
-  font-size: 55px;
-  padding: 100px 100px 70px 0;
+  font-size: 78px;
+  padding: 100px 100px 0px 0;
   line-height: 85px;
-}
-
-.jumbotron .right-col img {
-  position: absolute;
-  width: 830px;
 }
 
 .jumbotron .jumbotron-section {
   display: flex;
+  position: relative;
+  top: 80px;
 }
 
 .jumbotron .jumbotron-section .left-col {
@@ -125,6 +127,7 @@ header nav .nav-right .btn {
 .jumbotron .jumbotron-section .left-col i {
   font-size: 50px;
   margin-top: 60px;
+  margin-bottom: 70px;
 }
 
 /*
@@ -172,10 +175,6 @@ main .first-section .radio-btns {
 
 .first-section-content .offer {
   padding: 40px 30px;
-}
-
-.first-section-content h3 {
-  font-size: 24px;
 }
 
 .first-section-content .offer .offer-features .price {
@@ -257,6 +256,24 @@ main .first-section .radio-btns {
   width: 100%;
 } */
 
+/*----------------second section--------------*/
+main .second-section {
+  display: flex;
+  margin-top: 150px;
+}
+
+.second-section .w-60 {
+  width: 60%;
+}
+
+.second-section .w-40 {
+  width: 40%;
+  padding: 50px 45px;
+}
+
+.second-section p {
+  padding: 15px 0 20px 0;
+}
 /*
 ----------
 FOOTER

@@ -42,6 +42,10 @@ img {
   margin: 0 auto;
 }
 
+h2 {
+  font-size: 35px;
+}
+
 h3 {
   font-size: 24px;
 }
@@ -142,7 +146,6 @@ main .container-small.first-section {
 }
 
 main .first-section h2 {
-  font-size: 35px;
   padding: 60px 0;
 }
 
@@ -274,6 +277,30 @@ main .second-section {
 .second-section p {
   padding: 15px 0 20px 0;
 }
+
+/*----------------third section--------------*/
+main .third-section {
+  margin-top: 150px;
+}
+
+main .third-section h2 {
+  margin-bottom: 75px;
+}
+
+main .third-section .dropbox-business {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+main .third-section .dropbox-business > * {
+  width: calc((100% - 60px) / 3);
+}
+
+main .third-section p {
+  margin-top: 30px;
+}
+
 /*
 ----------
 FOOTER

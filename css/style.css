@@ -367,6 +367,7 @@ main .fourth-section h2 {
 
 #designit {
   background-color: #a2d39b;
+  border: 15px solid #d1e9cd;
 }
 
 #arizona {
@@ -436,6 +437,25 @@ main .fourth-section h2 {
 
 .fifth-section .bottom-section button {
   border: none;
+}
+
+/*----------------sixth section--------------*/
+.sixth-section {
+  padding: 150px 0;
+}
+
+.sixth-section > h2 {
+  margin-bottom: 70px;
+}
+
+.sixth-section > div {
+  display: flex;
+  padding: 40px 0;
+  justify-content: space-between;
+}
+
+.sixth-section > div > i {
+  margin-right: 40px;
 }
 
 /*

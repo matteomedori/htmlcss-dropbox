@@ -27,7 +27,6 @@ img {
   all: unset;
   padding: 10px 15px;
   cursor: pointer;
-  text-align: center;
   background-color: white;
   border: 1px solid black;
 }
@@ -102,12 +101,12 @@ header nav {
   background-color: white;
   height: 80px;
   line-height: 80px;
+  box-shadow: 0px 0.1px 5px 0.1px rgba(0, 0, 0, 0.5);
 }
 
 header nav .nav-left,
 header nav .nav-right {
   display: flex;
-  align-items: center;
 }
 
 header nav ul {
@@ -121,55 +120,17 @@ header nav ul li {
 }
 
 header nav .nav-left ul li:not(#logo):hover {
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
+  margin-bottom: -2px;
 }
 
 header nav .nav-right ul li:not(:last-child):hover {
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
+  margin-bottom: -2px;
 }
 
 header nav ul li .primary-btn {
   line-height: normal;
-}
-
-/*----------------jumbotron--------------*/
-.jumbotron {
-  background-color: #b4d0e7;
-  margin-top: 80px;
-}
-
-.jumbotron h1 {
-  font-size: 78px;
-  padding: 100px 100px 0px 0;
-  line-height: 85px;
-}
-
-.jumbotron .jumbotron-section {
-  display: flex;
-  position: relative;
-  top: 80px;
-}
-
-.jumbotron .jumbotron-section .left-col {
-  width: 30%;
-}
-
-.jumbotron .jumbotron-section .right-col {
-  width: 70%;
-}
-
-.jumbotron .jumbotron-section .left-col > * {
-  margin-bottom: 30px;
-}
-
-.jumbotron .jumbotron-section .left-col div:last-child {
-  margin-bottom: 20px;
-}
-
-.jumbotron .jumbotron-section .left-col i {
-  font-size: 50px;
-  margin-top: 60px;
-  margin-bottom: 70px;
 }
 
 /*
@@ -177,6 +138,34 @@ header nav ul li .primary-btn {
 MAIN
 ----------
 */
+/*----------------jumbotron--------------*/
+main .jumbotron {
+  background-color: #b4d0e7;
+  margin-top: 80px;
+}
+
+main .jumbotron h1 {
+  font-size: 78px;
+  padding: 100px 100px 0px 0;
+  line-height: 85px;
+}
+
+main .jumbotron .jumbotron-section {
+  display: flex;
+  position: relative;
+  top: 80px;
+}
+
+main .jumbotron .jumbotron-section .left-col > * {
+  margin-bottom: 30px;
+}
+
+main .jumbotron .jumbotron-section .left-col i {
+  font-size: 50px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
 /*----------------first section--------------*/
 main .container-small.first-section {
   margin-top: 100px;
@@ -279,22 +268,17 @@ main .first-section .radio-btns {
   margin: 0 5px 0 -15px;
 }
 
-.custom .offer.final {
+.first-section-content .custom .offer.final {
   display: flex;
 }
 
-.custom .offer.final div:first-child {
+.first-section-content .custom .offer.final div:first-child {
   margin-right: 50px;
 }
 
-.custom .offer.final h4 {
+.first-section-content .custom .offer.final h4 {
   padding: 20px 0 45px 0;
 }
-
-/* .first-section-content .primary-btn {
-  display: block;
-  width: 100%;
-} */
 
 /*----------------second section--------------*/
 main .second-section {
@@ -302,11 +286,11 @@ main .second-section {
   margin-top: 150px;
 }
 
-.second-section .w-40 {
+main .second-section .w-40 {
   padding: 50px 45px;
 }
 
-.second-section p {
+main .second-section p {
   padding: 15px 0 20px 0;
 }
 
@@ -336,41 +320,40 @@ main .third-section p {
 /*----------------fourth section--------------*/
 main .fourth-section {
   margin-top: 200px;
-  margin-bottom: 150px;
 }
 
-main .fourth-section h2 {
+.fourth-section .top-section h2 {
   padding-right: 350px;
   margin-bottom: 60px;
 }
 
-/*----------------fifth section--------------*/
-.fifth-section {
+.fourth-section .bg-blue {
   background-color: #b4d0e7;
+  margin-top: 150px;
 }
 
-.fifth-section .top-section {
+.fourth-section .mid-section {
   height: calc(100vw / 3);
   display: flex;
 }
 
-.fifth-section .top-section > * {
+.fourth-section .mid-section > * {
   width: calc(100% / 3);
 }
 
-.fifth-section .top-section .left-images {
+.fourth-section .mid-section .left-images {
   display: flex;
   flex-wrap: wrap;
 }
 
-.fifth-section .top-section .left-images > * {
+.fourth-section .mid-section .left-images > * {
   width: 50%;
   height: 50%;
   position: relative;
 }
 
-.fifth-section .left-images img,
-.fifth-section .right-images img {
+.fourth-section .left-images img,
+.fourth-section .right-images img {
   width: 50%;
   position: absolute;
   top: 50%;
@@ -399,27 +382,27 @@ main .fourth-section h2 {
   background-color: #ff1c1c;
 }
 
-.fifth-section .top-section .center-section {
+.fourth-section .mid-section .center-section {
   background-color: #f5f5f5;
   padding: 45px;
   overflow: auto;
 }
 
-.fifth-section .top-section .center-section img {
+.fourth-section .mid-section .center-section img {
   width: 50%;
+  margin-bottom: 45px;
 }
 
-.fifth-section .top-section .center-section p {
-  margin-top: 40px;
-  margin-bottom: 55px;
+.fourth-section .mid-section .center-section p {
+  padding: 40px 0 55px 0;
 }
 
-.fifth-section .top-section .right-images {
+.fourth-section .mid-section .right-images {
   display: flex;
   flex-wrap: wrap;
 }
 
-.fifth-section .top-section .right-images > * {
+.fourth-section .mid-section .right-images > * {
   width: 50%;
   height: 50%;
   position: relative;
@@ -441,50 +424,50 @@ main .fourth-section h2 {
   background-color: #ffd830;
 }
 
-.fifth-section .bottom-section {
+.fourth-section .bottom-section {
   display: flex;
   padding: 135px 0;
 }
 
-.fifth-section .bottom-section h2 {
+.fourth-section .bottom-section h2 {
   color: #61082b;
   padding-right: 150px;
 }
 
-.fifth-section .bottom-section button {
+.fourth-section .bottom-section button {
   border: none;
 }
 
-/*----------------sixth section--------------*/
-.sixth-section {
+/*----------------fifth section--------------*/
+main .fifth-section {
   padding: 150px 0;
 }
 
-.sixth-section > h2 {
+.fifth-section > h2 {
   margin-bottom: 70px;
 }
 
-.sixth-section > div {
+.fifth-section > .row {
   display: flex;
   flex-wrap: wrap;
   padding: 40px 0;
   justify-content: space-between;
 }
 
-.sixth-section > div > i {
+.fifth-section > .row > i {
   margin-right: 40px;
 }
 
-.sixth-section > div > p {
+.fifth-section > .row > p {
   margin-top: 20px;
   display: none;
 }
 
-.sixth-section > div > i:hover + p {
+.fifth-section > .row > i:hover + p {
   display: block;
 }
 
-.sixth-section > div > i:hover {
+.fifth-section > .row > i:hover {
   transform: rotate(180deg);
 }
 
@@ -497,9 +480,6 @@ footer {
   background-color: black;
   color: white;
   border-bottom: 2px solid white;
-}
-
-footer {
   padding-top: 100px;
 }
 
@@ -509,7 +489,7 @@ footer .footer-top {
   margin-bottom: 100px;
 }
 
-footer .footer-top > .footer-column {
+.footer-top > .footer-column {
   width: calc((100% - 380px) / 5);
 }
 

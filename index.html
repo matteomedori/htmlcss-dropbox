@@ -55,15 +55,19 @@
         <!-- /nav-right: list + button  -->
       </nav>
       <!-- /nav bar: nav-left - nav-right -->
+    </header>
+    <!-- /header -->
 
+    <!-- main -->
+    <main>
       <!-- jumbotron -->
-      <div class="jumbotron">
+      <section class="jumbotron">
         <div class="container-big">
           <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
           <!-- jumbotron section under the title -->
           <div class="jumbotron-section">
             <!-- left-col jumbotron section -->
-            <div class="left-col">
+            <div class="left-col w-30">
               <p>
                 Finalmente tutti i tuoi strumenti, contenuti e collaboratori
                 sono disponibili dalla stesso posto. Dropbox Business è più di
@@ -81,18 +85,16 @@
             <!-- /left-col jumbotron section -->
 
             <!-- right-col jumbotron section -->
-            <div class="right-col"><img src="img/jumbo.png" alt="jumbo" /></div>
+            <div class="right-col w-70">
+              <img src="img/jumbo.png" alt="jumbo" />
+            </div>
             <!-- /right-col jumbotron section -->
           </div>
           <!-- /jumbotron section under the title -->
         </div>
-      </div>
+      </section>
       <!-- /jumbotron -->
-    </header>
-    <!-- /header -->
 
-    <!-- main -->
-    <main>
       <!-- first section -->
       <section class="container-small first-section">
         <!-- first section part: title + radio buttons -->
@@ -252,7 +254,7 @@
       <!-- /first section -->
 
       <!-- second section -->
-      <div class="container-small second-section">
+      <section class="container-small second-section">
         <div class="w-60">
           <img src="img/partner.png" alt="partner" />
         </div>
@@ -266,7 +268,7 @@
           </p>
           <button class="btn">Trova un partner</button>
         </div>
-      </div>
+      </section>
       <!-- /second section -->
 
       <!-- third section -->
@@ -375,84 +377,85 @@
       <!-- /third section -->
 
       <!-- fourth section -->
-      <section class="container-small fourth-section">
-        <h2>Più di 500.000 team utilizzano Dropbox Business</h2>
-        <a href="#">Scopri di più sui nostri clienti</a>
+      <section class="fourth-section">
+        <div class="top-section container-small">
+          <h2>Più di 500.000 team utilizzano Dropbox Business</h2>
+          <a href="#">Scopri di più sui nostri clienti</a>
+        </div>
+        <!-- bg-blue: mid-section + bottom-secton -->
+        <div class="bg-blue">
+          <!-- mid section: left-images + center-section + right-images -->
+          <div class="mid-section">
+            <div class="left-images">
+              <div id="designit">
+                <img id="prova" src="img/designit.svg" alt="designit" />
+              </div>
+              <div id="arizona">
+                <img
+                  src="img/arizona_state_university.svg"
+                  alt="arizona_state_university"
+                />
+              </div>
+              <div id="florida">
+                <img
+                  src="img/university_of_florida.svg"
+                  alt="university_of_florida"
+                />
+              </div>
+              <div id="topps">
+                <img src="img/topps.svg" alt="topps" />
+              </div>
+            </div>
+            <div class="center-section">
+              <img src="img/designit.svg" alt="designit" />
+              <hr />
+              <p>
+                "I membri del nostro team lavorano costantemente in Paesi, fusi
+                orari e uffici diversi. Ora molte situazioni sono compatibili
+                con queste esigenze, ma nessuna è facile quanto Dropbox e
+                Dropbox Paper. Ora molte soluzioni sono compatibili con queste
+                esigenze, ma nessuna è facile quanto Dropbox Paper."
+              </p>
+              <div>Morten Thomsen, Global IT Lead</div>
+            </div>
+            <div class="right-images">
+              <div id="world-bicycle">
+                <img
+                  src="img/world_bicycle_relief.svg"
+                  alt="world_bicycle_relief"
+                />
+              </div>
+              <div id="hearst">
+                <img src="img/hearst_corp.svg" alt="hearst_corp" />
+              </div>
+              <div id="lonely-planet">
+                <img src="img/lonely_planet.svg" alt="lonely_planet" />
+              </div>
+              <div id="clear-channel">
+                <img src="img/clear_channel.svg" alt="clear_channel" />
+              </div>
+            </div>
+          </div>
+          <!-- /mid section: left-images + center-section + right-images -->
+
+          <!-- bottom section: h2 + button -->
+          <div class="bottom-section container-small">
+            <h2 class="w-70">Porta Dropbox Business nella tua azienda.</h2>
+            <div class="w-30">
+              <button class="btn">Inizia la tua prova gratuita</button>
+            </div>
+          </div>
+          <!-- /bottom section: h2 + button -->
+        </div>
+        <!-- /bg-blue: mid-section + bottom-secton -->
       </section>
       <!-- /fourth section -->
 
       <!-- fifth section -->
-      <div class="fifth-section">
-        <!-- top section: left-images + center-section + right-images -->
-        <div class="top-section">
-          <div class="left-images">
-            <div id="designit">
-              <img src="img/designit.svg" alt="designit" />
-            </div>
-            <div id="arizona">
-              <img
-                src="img/arizona_state_university.svg"
-                alt="arizona_state_university"
-              />
-            </div>
-            <div id="florida">
-              <img
-                src="img/university_of_florida.svg"
-                alt="university_of_florida"
-              />
-            </div>
-            <div id="topps">
-              <img src="img/topps.svg" alt="topps" />
-            </div>
-          </div>
-          <div class="center-section">
-            <img src="img/designit.svg" alt="designit" />
-            <hr />
-            <p>
-              "I membri del nostro team lavorano costantemente in Paesi, fusi
-              orari e uffici diversi. Ora molte situazioni sono compatibili con
-              queste esigenze, ma nessuna è facile quanto Dropbox e Dropbox
-              Paper. Ora molte soluzioni sono compatibili con queste esigenze,
-              ma nessuna è facile quanto Dropbox Paper."
-            </p>
-            <div>Morten Thomsen, Global IT Lead</div>
-          </div>
-          <div class="right-images">
-            <div id="world-bicycle">
-              <img
-                src="img/world_bicycle_relief.svg"
-                alt="world_bicycle_relief"
-              />
-            </div>
-            <div id="hearst">
-              <img src="img/hearst_corp.svg" alt="hearst_corp" />
-            </div>
-            <div id="lonely-planet">
-              <img src="img/lonely_planet.svg" alt="lonely_planet" />
-            </div>
-            <div id="clear-channel">
-              <img src="img/clear_channel.svg" alt="clear_channel" />
-            </div>
-          </div>
-        </div>
-        <!-- /top section: left-images + center-section + right-images -->
-
-        <!-- bottom section: h2 + button -->
-        <div class="bottom-section container-small">
-          <h2 class="w-70">Porta Dropbox Business nella tua azienda.</h2>
-          <div class="w-30">
-            <button class="btn">Inizia la tua prova gratuita</button>
-          </div>
-        </div>
-        <!-- /bottom section: h2 + button -->
-      </div>
-      <!-- /fifth section -->
-
-      <!-- sixth section -->
-      <section class="container-small sixth-section">
+      <section class="container-small fifth-section">
         <h2>Domande frequenti</h2>
         <hr style="width: 100%" />
-        <div>
+        <div class="row">
           <strong
             >Quale è la differenza tra Dropbox Business Standard e Dropbox
             Business Advanced?</strong
@@ -466,7 +469,7 @@
           </p>
         </div>
         <hr style="width: 100%" />
-        <div>
+        <div class="row">
           <strong
             >Quale è la differenza tra Dropbox Business Standard e Dropbox
             Business Advanced?</strong
@@ -480,7 +483,7 @@
           </p>
         </div>
         <hr style="width: 100%" />
-        <div>
+        <div class="row">
           <strong
             >Quale è la differenza tra Dropbox Business Standard e Dropbox
             Business Advanced?</strong
@@ -495,13 +498,14 @@
         </div>
         <hr style="width: 100%" />
       </section>
-      <!-- /sixth section -->
+      <!-- /fifth section -->
     </main>
     <!-- /main -->
 
     <!-- footer -->
     <footer>
       <div class="container-big">
+        <!-- footer-top: section with columns -->
         <div class="footer-top">
           <div class="footer-column">
             <h3>Dropbox</h3>
@@ -554,6 +558,7 @@
             </ul>
           </div>
         </div>
+        <!-- /footer-top: section with columns -->
         <hr />
         <div class="language">
           <i class="fa-solid fa-earth-americas"></i>
